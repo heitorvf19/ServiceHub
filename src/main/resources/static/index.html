@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#101827" />
+    <title>ServiceHub</title>
+    <link rel="icon" href="/assets/marca.jpeg" />
+    <link rel="stylesheet" href="/assets/icons.css" />
+    <link rel="stylesheet" href="/style.css?v=dark" />
+  </head>
+  <body>
+    <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+    <header class="topbar">
+      <div class="top-inner">
+        <a class="brand" href="#inicio"
+          ><img src="/assets/marca.jpeg" alt="" /><span
+            >Service<span class="brand-accent">Hub</span></span
+          ></a
+        >
+        <nav class="main-nav" id="menu" aria-label="Navegação principal"></nav>
+        <div id="conta-topo"></div>
+      </div>
+    </header>
+    <main id="conteudo" tabindex="-1" aria-busy="true"><p class="muted">Carregando…</p></main>
+    <div id="aviso" role="status" aria-live="polite"></div>
+    <dialog id="dialogo">
+      <form method="dialog">
+        <h2 id="titulo-dialogo"></h2>
+        <p id="texto-dialogo"></p>
+        <div class="actions">
+          <button value="cancelar" class="btn secundario">Voltar</button
+          ><button value="sim" class="btn primario" id="sim-dialogo">Confirmar</button>
+        </div>
+      </form>
+    </dialog>
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
